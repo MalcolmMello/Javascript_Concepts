@@ -8,12 +8,12 @@ const gender = {
 const persons = [
     {
         name: 'Malcolm',
-        age: 17,
+        age: 16,
         gender: gender.MAN
     },
     {
         name: 'Cleito',
-        age: 17,
+        age: 16,
         gender: gender.MAN
     },
     {
@@ -38,4 +38,24 @@ persons.forEach((person, index, arr) => {
 const mens = persons.filter(person => person.gender === gender.MAN)
 console.log('\nNova lista com somente homens')
 
-//
+// Retornar um novo
+const personWithCourse = persons.map((person) => {
+    person.course = 'Introdução ao javascript'
+    return person
+})
+console.log('\nPessoas com adição do curso: ', personWithCourse)
+
+// Transformar array em outro time
+const totalAge = persons.reduce((age, person) => {
+    age += person.age
+    return age
+}, 0)
+console.log('\nSoma de idade das pessoas', totalAge)
+
+//Juntando as opereações
+const totalEvenAges = persons
+                        .filter(person => person.age % 2 === 0)
+                        .reduce((age, person) => {
+                            age += person.age
+                            return age
+                        }, 0)
