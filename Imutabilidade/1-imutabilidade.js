@@ -6,7 +6,7 @@
 /* Sideeffects - Útil para não alterar dados de forma indesejada */
 
 const user = {
-    name: 'Maloolm',
+    name: 'Malcolm',
     lastName: 'De Mello Lima'
 }
 
