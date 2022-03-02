@@ -64,3 +64,4 @@ frutas.splice(2, 1, 'laranha', 'amora')
 // ['banana']
 console.log(frutas)
 // ['melancia', 'acerola', 'laranja', 'amora']
+

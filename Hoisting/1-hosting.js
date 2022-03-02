@@ -10,7 +10,8 @@
 	console.log(text)
 }
 
-/*o que acontece na execução
+/*
+o que acontece na execução
 
 function fn() {
 	var text;
